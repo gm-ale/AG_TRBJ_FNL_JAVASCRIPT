@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Locos_por_el_Mar</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet"  href="../css/estilos.css">        
+        <link rel="stylesheet"  href="../css/contacto.css">
+    </head>
+
+    <body>
+
+        <header class="hero">
+            <nav class="nav container">
+                <div class="nav_logo">
+                    <h2 class="nav_title">Locos por el Mar</h2>
+                </div>
+
+                <ul class="nav_link nav_link--menu">
+                    <li class="nav_items">
+                        <a href="../index.html" class="nav_links"> Inicio</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="../view/galeria.html" class="nav_links"> Galeria</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="../view/presupuesto.html" class="nav_links"> Presupuesto</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="../view/contacto.html" class="nav_links"> Contacto</a>
+                        <img src="../IMG/close.svg" class="nav_close" alt="icono de cierre del nav">
+
+                    </li>
+                </ul>
+
+                <div class="nav_menu">
+                    <img src="../IMG/slider_inicio2.jpg" class="nav_img" alt="imagen de inicio">
+                </div>
+            </nav>
+
+            <section class="hero_container container">
+                    <h1 class="hero_title"> Descubre como nunca antes el fondo marino.</h1>
+                    <p class="hero_paragraph"> Elige y te enseñaremos hacer desde Surf, Kayak, Submarinimos...</p>
+                    <a href="#" class="cta">Reserva Ahora</a>
+            </section>
+        </header>
+
+        <!--En este section definimos el primer container para mostarar la información de ocntacto de nuestro negocio-->
+            <!--Lo hacemos de forma sencilla utilizando simplemente un div y unas etiquetas <p> para coontenr la información-->
+        <section id="map-section">
+            <div class="contact-info">
+              <h2>Contacto y Ubicación</h2>
+              <br>
+              <p><strong>Empresa:</strong> Locos por el Mar</p>
+              <p><strong>Dirección:</strong> Calle Falsa 123, Ciudad Imaginaria</p>
+              <p><strong>Teléfono:</strong> +34 123 456 789</p>
+              <p><strong>Email:</strong> contacto@locosporelmar.com</p>
+            </div>
+
+          <!--Este DIV si es más complejo, lo utilizamos para definir la estructura del mapa que apaerecera en nuestra web-->
+          <!--Para crearlo utilizamos un div dónde definiremos la información de OpenStreetMap para enlazar la ubicación fictia de nuestro negocio con nuestra web-->
+          <!--Para esta section utilizamos funciones de javascript que definimos en le archivo contacto.js,-->
+            <!--estas son las que nos permiten mostrar el icono de dónde seencuentra nuestra ubicación, también la del usuario. Además de la distancia entre ambos-->
+            <div class="map-container">
+              <iframe 
+                width="425" 
+                height="350" 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=3.2061946539316737%2C39.567033651971094%2C3.2140106110010707%2C39.570713990765505&amp;layer=mapnik&amp;marker=39.56887384578746%2C3.2101026324663735" 
+                style="border: 1px solid black" 
+                loading="lazy" 
+                title="Mapa OpenStreetMap">
+              </iframe>
+              
+              <small>
+                <a href="https://www.openstreetmap.org/?mlat=39.568874&amp;mlon=3.210103#map=18/39.568874/3.210103" target="_blank" rel="noopener noreferrer">Ver el mapa más grande</a>
+              </small>
+            </div>
+          </section>          
+
+        <footer class="footer">
+            <section class="footer_container container">
+                <nav class="nav nav--footer">
+                    <h2 class="footer_title">Actividades y Excursiones</h2>
+
+                    <ul class="nav_link nav_link--footer">
+                        <li class="nav_items">
+                            <a href="#" class="nav_links"> Inicio</a>
+                        </li>
+    
+                        <li class="nav_items">
+                            <a href="#" class="nav_links"> Galeria</a>
+                        </li>
+    
+                        <li class="nav_items">
+                            <a href="#" class="nav_links"> Presupuesto</a>
+                        </li>
+    
+                        <li class="nav_items">
+                            <a href="#" class="nav_links"> Contacto</a>
+                            <img src="../IMG/close.svg" class="nav_close" alt="icono de cierre del nav">
+                        </li>
+     
+                    </ul>
+                </nav>
+
+                <form class="footer_form">
+                    <h2 class="footer_newsletter">Suscibete a nuestra Newsletter</h2>
+                    <div class="footer_inputs">
+                        <input type="email" placeholder="Email:" class="footer_input">
+                        <input type="submit" value="Registrate" class="footer_submit">
+                    </div>
+                </form>
+            </section>
+
+            <section class="footer_copy container">
+                <div class="footer_social">
+                    <a href="https://www.facebook.com/" class="footer_icons"><img src="../IMG/facebook.svg" class="footer_img" alt="logo facebook">  </a>
+                    <a href="https://www.instagram.com/" class="footer_icons"><img src="../IMG/instagram.svg" class="footer_img" alt="logo instagram">  </a>
+                    <a href="https://www.tiktok.com/" class="footer_icons"><img src="../IMG/tiktok.svg" class="footer_img" alt="logo tiktok">  </a>
+                </div>
+
+                <h3 class="footer_copyright">Derechos Reservados &copy; Alejandro García</h3>
+            </section>
+        </footer>
+
+        <script src="../js/contacto.js"></script>
+        <script async
+             src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
+        
+    </body>
+
+</html>

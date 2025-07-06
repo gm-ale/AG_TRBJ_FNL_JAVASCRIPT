@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <!--Definimos nuestro Head utilizando meta etiquetas para configurar sus dimensions, además enlazamos por medio de link nuestro css de estilos y los icónos que utilizamos en la web-->
+    <!--En la pagina index cambiamos lang = es por lang = zxx por el uso de contenido en Lorem Ipsum para poder erradicar el aviso de error y dejar así el archivo validado correctamente--> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Locos_por_el_Mar</title>
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet"  href="./css/estilos.css">
+    </head>
+
+    <body>
+    <!--Definimos el nav de nuestra web desde el que podremos acceder a als diferentes landing de nuestro web-site --> 
+        <header class="hero">
+            <nav class="nav container">
+                <div class="nav_logo">
+                    <h2 class="nav_title">Locos por el Mar</h2>
+                </div>
+
+                <ul class="nav_link nav_link--menu">
+                    <li class="nav_items">
+                        <a href="./index.html" class="nav_links"> Inicio</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="./view/galeria.html" class="nav_links"> Galeria</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="./view/presupuesto.html" class="nav_links"> Presupuesto</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="./view/contacto.html" class="nav_links"> Contacto</a>
+                        <img src="../IMG/close.svg" class="nav_close" alt="icono de cierre del nav">
+
+                    </li>
+                </ul>
+
+                <div class="nav_menu">
+                    <img src="../IMG/slider_inicio2.jpg" class="nav_img" alt="imagen de inicio">
+                </div>
+            </nav>
+
+    <!--En este section definimos el slieder priniiplal de nuestra wenb, lo encontraremos en cada una de nuestras landing-->
+            <section class="hero_container container">
+                    <h1 class="hero_title"> Descubre como nunca antes el fondo marino.</h1>
+                    <p class="hero_paragraph"> Elige y te enseñaremos hacer desde Surf, Kayak, Submarinimos...</p>
+                    <a href="#" class="cta">Reserva Ahora</a>
+            </section>
+        </header>
+
+    <!--En esta priemra section de nuestro main, encontramos un apartado dedicado a introducir al usuario de que servicios ofrecemos-->
+        <main>
+            <section class="container about">
+                <h2 class="subtitle"> ¿Qué actividades puedes realizar con nosotros?</h2>
+                <p class="about_paragraph"> Ofrecemos gran variedad de deportes y actividades acuaticas</p>
+
+                <div class="about_main">
+                    <article class="about_icons">
+                        <img src="../IMG/globo.svg" class="about_icon" alt="globo_icono">
+                        <h3 class="about_title">Kayak</h3>
+                        <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sequi vitae quos,
+                        ipsum voluptatem perferendis eveniet quaerat culpa! Officia repudiandae vel voluptate labore adipisci eaque?</p>
+                    </article>
+
+                    <article class="about_icons">
+                        <img src="../IMG/globo.svg" class="about_icon" alt="globo_icono">
+                        <h3 class="about_title">Buceo</h3>
+                        <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sequi vitae quos,
+                        ipsum voluptatem perferendis eveniet quaerat culpa! Officia repudiandae vel voluptate labore adipisci eaque?</p>
+                    </article>
+
+                    <article class="about_icons">
+                        <img src="../IMG/globo.svg" class="about_icon" alt="globo_icono">
+                        <h3 class="about_title">Padel Surf</h3>
+                        <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sequi vitae quos,
+                        ipsum voluptatem perferendis eveniet quaerat culpa! Officia repudiandae vel voluptate labore adipisci eaque?</p>
+                    </article>
+
+                </div>
+            </section>
+
+    <!--En esta SECTION querems llamar la atención del usiario para animarloa que siga scrolleando por eso utilizamos una imagen, un h2 y unos estilos que capten su atención-->
+            <section class="knowledge">
+                <div class="knowledge_container container">
+                    <div class="Knowledge_texts">
+                            <h2 class="subtitle"> Conoce la gran variedad de deportes y acividades. ¡Aprende los mejores deportes y vive experiencias inolvidables!</h2>
+                            <p class="knowledge_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Hic esse magni rem saepe aperiam deserunt praesentium quasi quia nostrum adipisci. 
+                            Nihil, alias, voluptas soluta temporibus, exercitationem vel molestias laudantium aliquid id nisi praesentium vitae in officiis minus officia labore fuga maiores eius nam eligendi quibusdam?</p>
+                            <a href="#" class="cta">Apuntate Ya</a>
+                        </div>
+
+                        <figure class=" knwoledge_pictures">
+                            <img src="../IMG/sagar-thakurdesai-iNaYUA25so0-unsplash.jpg" class=" knowledge_img" alt="imagen contenedor de knowledge">
+                        </figure>
+                </div>
+            </section>
+
+    <!--En este apartado definomos unos planes de precios que ofrecemoos para la realiación de eventos reservados-->
+    <!--Con ayuda de los estilos CSS hacemos destacar nustro div del medio para hacerlo destacar del resto-->
+            <section class="price container">
+                <h2 class="subtitle">Elige uno de Nuestros Planes de Precios</h2>
+                
+                <div class="price_table">
+                    <div class="price_element">
+                        <p class="price_name">De 5 a 10</p>
+                        <h3 class="price_price">10$ por persona</h3>
+    
+                        <div class="price_items">
+                            <p class="price_features">Lorem</p>
+                            <p class="price_features">Lorem</p>
+                            <p class="price_features">Lorem</p>
+                        </div>
+    
+                        <a href="#" class="price_cta">Empieza ahora</a>
+                    </div>
+    
+    
+                    <div class="price_element price_element--best">
+                        <p class="price_name">De 5 a 15</p>
+                        <h3 class="price_price">120$</h3>
+    
+                        <div class="price_items">
+                            <p class="price_features">Lorem</p>
+                            <p class="price_features">Lorem</p>
+                            <p class="price_features">Lorem</p>
+                        </div>
+    
+                        <a href="#" class="price_cta">Empieza ahora</a>
+                    </div>
+    
+    
+                    <div class="price_element">
+                        <p class="price_name">de 15 a 20</p>
+                        <h3 class="price_price">13$ por persona</h3>
+    
+                        <div class="price_items">
+                            <p class="price_features">Lorem</p>
+                            <p class="price_features">Lorem</p>
+                            <p class="price_features">Lorem</p>
+                        </div>
+    
+                        <a href="#" class="price_cta">Empieza ahora</a>
+                    </div>
+    
+    
+                </div>
+            </section>
+            
+            <!--Con el siguiente DIV queremos mostra un apartado dónde el usuario pueda ver y conocer experiencia de clientes anteriores-->
+            <div class="testimony">
+                <div class="testimony_container container">
+
+                    <img src="../IMG/arrow_left.svg"   class="testimony_arrow" id="before" alt="flecha izquierda">
+
+                    <section class="testimony_body testimony_body--show" data-id="1">
+                        <div class="testimony_texts">
+                            <h2 class="subtitle">Mi nombe es Raquel Pereira, <span class="testimony_course"></span>reserve en Agosto un pack de excursiones y actividades guiadas.</h2>
+                            <p class="testimony_review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia est cumque pariatur fuga labore quos eaque commodi?
+                            Sit doloremque ut nam ipsum sed dolor, odit nulla beatae ab odio. Enim eligendi, placeat illum laboriosam, quaerat explicabo corrupti possimus numquam consequatur quod accusantium reprehenderit unde distinctio aut temporibus modi consectetur
+                            magni soluta quis repellat vero fugit, incidunt architecto amet! Accusantium aut quod impedit laborum harum cumque soluta sunt animi exercitationem perferendis.</p>
+                        </div>
+
+                        <figure class="testimony_picture">
+                            <img src="../IMG/toa-heftiba-O3ymvT7Wf9U-unsplash.jpg" class="testimony_img" alt="Imagen clienta satisfecha ">
+                        </figure>
+                    </section>
+
+                    <img src="../IMG/arrow_right.svg"   class="testimony_arrow" id="next" alt="flecha derecha">
+
+                    <section class="testimony_body" data-id="2">
+                        <div class="testimony_texts">
+                            <h2 class="subtitle">Mi nombe es Victor Suarez, <span class="testimony_course"></span>reserve en Agosto un pack de excursiones y actividades guiadas.</h2>
+                            <p class="testimony_review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia est cumque pariatur fuga labore quos eaque commodi?
+                            Sit doloremque ut nam ipsum sed dolor, odit nulla beatae ab odio. Enim eligendi, placeat illum laboriosam, quaerat explicabo corrupti possimus numquam consequatur quod accusantium reprehenderit unde distinctio aut temporibus modi consectetur
+                            magni soluta quis repellat vero fugit, incidunt architecto amet! Accusantium aut quod impedit laborum harum cumque soluta sunt animi exercitationem perferendis.</p>
+                        </div>
+
+                        <figure class="testimony_picture">
+                            <img src="../IMG/ian-dooley-d1UPkiFd04A-unsplash.jpg" class="testimony_img" alt=" imagen cliente satisfecho">
+                        </figure>
+                    </section>
+
+                    <section class="testimony_body" data-id="3">
+                        <div class="testimony_texts">
+                            <h2 class="subtitle">Mi nombe es Ana Justel, <span class="testimony_course"></span>reserve en Agosto un pack de excursiones y actividades guiadas.</h2>
+                            <p class="testimony_review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia est cumque pariatur fuga labore quos eaque commodi?
+                            Sit doloremque ut nam ipsum sed dolor, odit nulla beatae ab odio. Enim eligendi, placeat illum laboriosam, quaerat explicabo corrupti possimus numquam consequatur quod accusantium reprehenderit unde distinctio aut temporibus modi consectetur
+                            magni soluta quis repellat vero fugit, incidunt architecto amet! Accusantium aut quod impedit laborum harum cumque soluta sunt animi exercitationem perferendis.</p>
+                        </div>
+
+                        <figure class="testimony_picture">
+                            <img src="../IMG/good-faces-xmSWVeGEnJw-unsplash.jpg" class="testimony_img" alt="Imagen clienta satisfecha 2">
+                        </figure>
+                    </section>
+
+                    <section class="testimony_body" data-id="4">
+                        <div class="testimony_texts">
+                            <h2 class="subtitle">Mi nombe es Saul Hernandez, <span class="testimony_course"></span>reserve en Agosto un pack de excursiones y actividades guiadas.</h2>
+                            <p class="testimony_review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia est cumque pariatur fuga labore quos eaque commodi?
+                            Sit doloremque ut nam ipsum sed dolor, odit nulla beatae ab odio. Enim eligendi, placeat illum laboriosam, quaerat explicabo corrupti possimus numquam consequatur quod accusantium reprehenderit unde distinctio aut temporibus modi consectetur
+                            magni soluta quis repellat vero fugit, incidunt architecto amet! Accusantium aut quod impedit laborum harum cumque soluta sunt animi exercitationem perferendis.</p>
+                        </div>
+
+                        <figure class="testimony_picture">
+                            <img src="../IMG/darshan-patel-QJEVpydulGs-unsplash.jpg" class="testimony_img" alt="Imagen clienta satisfecha 2">
+                        </figure>
+                    </section>
+                </div>
+            </div>
+
+            <!--En este section, quisimos ofrecer al usuario una gía de información de preguntas frecuentes que tiene los usuarios-->
+                <!--Para darle funcionalidad y dinamismo utilizamos javascript para que el usuario pueda elegir que información quiere desplegar-->
+
+            <section class="questions container">
+                    <h2 class="subtitle">Preguntas Frecuentes</h2>
+                    <p class="questions_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ea eaque maxime tempora laudantium culpa expedita officia ullam debitis dolor?</p>
+
+                    <div class="questions_container">
+                        <article class="questions_padding">
+                            <div class="questions_answer">
+                                <h3 class="questions_title"> ¿Qué actividades realizamos?                                 
+                                    <span class="questions_arrows">
+                                        <img src="../IMG/arrow_desplegable.svg"  class="questions_img" alt="imagen arrow">
+                                    </span>
+                                </h3>
+
+                                <p class="questions_show">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aut ex modi tempore reprehenderit culpa provident debitis expedita voluptatum cupiditate pariatur sint quod quasi, 
+                                deserunt molestiae. Officiis commodi temporibus omnis consequatur incidunt praesentium iure quo at accusantium quod adipisci architecto inventore facilis odit nulla in soluta ratione fugit, quae minima sapiente, 
+                                dolorem eum necessitatibus ipsa. Nesciunt explicabo corrupti quos aperia.</p>
+                            </div>
+                        </article>
+
+                        <article class="questions_padding">
+                            <div class="questions_answer">
+                                <h3 class="questions_title"> ¿Que disponibilidad hay para las reservas?                                 
+                                    <span class="questions_arrows">
+                                        <img src="../IMG/arrow_desplegable.svg"  class="questions_img" alt="imagen arrow">
+                                    </span>
+                                </h3>
+
+                                <p class="questions_show">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aut ex modi tempore reprehenderit culpa provident debitis expedita voluptatum cupiditate pariatur sint quod quasi, 
+                                deserunt molestiae. Officiis commodi temporibus omnis consequatur incidunt praesentium iure quo at accusantium quod adipisci architecto inventore facilis odit nulla in soluta ratione fugit, quae minima sapiente, 
+                                dolorem eum necessitatibus ipsa. Nesciunt explicabo corrupti quos aperia.</p>
+                            </div>
+                        </article>
+
+                        <article class="questions_padding">
+                            <div class="questions_answer">
+                                <h3 class="questions_title"> ¿Cuántas actividades ?                              
+                                    <span class="questions_arrows">
+                                        <img src="../IMG/arrow_desplegable.svg"  class="questions_img" alt="imagen arrow">
+                                    </span>
+                                </h3>
+
+                                <p class="questions_show">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aut ex modi tempore reprehenderit culpa provident debitis expedita voluptatum cupiditate pariatur sint quod quasi, 
+                                deserunt molestiae. Officiis commodi temporibus omnis consequatur incidunt praesentium iure quo at accusantium quod adipisci architecto inventore facilis odit nulla in soluta ratione fugit, quae minima sapiente, 
+                                dolorem eum necessitatibus ipsa. Nesciunt explicabo corrupti quos aperia.</p>
+                            </div>
+                        </article>
+
+                    </div>
+               
+                    <!--Este section no esta relacionado con las funcionalidades javascript del anterior-->
+                    <!--Esta m´sa enfocado en hacer una última call to action para aniamr al usuario a pulsar en el boton para enlazarlo a más información-->
+                      <!--En este caso no le hemos dando ningun enlace dado que la idea es reservarlo para una futura landing-->
+                    <section class="questions_offer">
+                        <h2 class="subtitle">¿Estas listo para descubrir el fondo marino?</h2>
+                        <p class="questions_copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, facilis. Error necessitatibus eligendi, 
+                        eum aliquid saepe hic quod dignissimos quos. Dolore unde quam esse asperiores facere. Possimus, voluptates inventore. 
+                        Vel ut sequi corporis? Distinctio id rem in sunt cupiditate possimus temporibus at praesentium obcaecati voluptatem quis, 
+                        alias quo aut tenetur! Illo possimus ducimus ad corporis dolorum dicta, beatae voluptatum aperiam laudantium voluptas, vel veniam qui! 
+                        Aperiam explicabo vero totam eius nesciunt, officia adipisci nemo dicta libero, odit mollitia soluta illum hic. 
+                        Expedita error saepe nihil similique itaque consectetur ducimus totam.</p>
+                        <a href="#" class="cta">Descubrelo Ahora</a>
+                    </section>
+            </section>
+
+        </main>
+
+            <!--En este apatado ya nos encontramos el footer-->
+            <!--En el definimos un pequeño nav que permita al usuaruio desplazarse a las otras landing sin tener que volver a scrollear hasta el nav prinicipla-->
+
+        <footer class="footer">
+            <section class="footer_container container">
+                <nav class="nav nav--footer">
+                    <h2 class="footer_title">Actividades y Excursiones</h2>
+
+                    <ul class="nav_link nav_link--footer">
+                        <li class="nav_items">
+                            <a href="./index.html" class="nav_links"> Inicio</a>
+                        </li>
+    
+                        <li class="nav_items">
+                            <a href="./view/galeria.html" class="nav_links"> Galeria</a>
+                        </li>
+    
+                        <li class="nav_items">
+                            <a href="./view/presupuesto.html" class="nav_links"> Presupuesto</a>
+                        </li>
+    
+                        <li class="nav_items">
+                            <a href="./view/contacto.html" class="nav_links"> Contacto</a>
+                            <img src="../IMG/close.svg" class="nav_close" alt="icono de cierre del nav">
+                        </li>
+     
+                    </ul>
+                </nav>
+                    
+                <!--En este footer también tenemos un pequeño formpara que el usuario pueda introducir sus datos y registrase en nuestra Newsletter-->
+                <form class="footer_form">
+                    <h2 class="footer_newsletter">Suscibete a nuestra Newsletter</h2>
+                    <div class="footer_inputs">
+                        <input type="email" placeholder="Email:" class="footer_input">
+                        <input type="submit" value="Registrate" class="footer_submit">
+                    </div>
+                </form>
+            </section>
+                  
+            
+            <!--Finalmentes nuestro footer acaba con section y un div dónde mostramos enlaces con iconos a nuestras redes sociales y los derechos de autor de la web-->
+            <section class="footer_copy container">
+                <div class="footer_social">
+                    <a href="https://www.facebook.com/" class="footer_icons"><img src="../IMG/facebook.svg" class="footer_img" alt="logo facebook">  </a>
+                    <a href="https://www.instagram.com/" class="footer_icons"><img src="../IMG/instagram.svg" class="footer_img" alt="logo instagram">  </a>
+                    <a href="https://www.tiktok.com/" class="footer_icons"><img src="../IMG/tiktok.svg" class="footer_img" alt="logo tiktok">  </a>
+                </div>
+
+                <h3 class="footer_copyright">Derechos Reservados &copy; Alejandro García</h3>
+            </section>
+        </footer>
+
+        <!--Aqui es dónde enlazamos los acrhivos js utilizados en las sections y apartados de nuestro index-->
+        <script src="../js/slider.js"></script>
+        <script src="../js/questions.js"></script>
+        <script src="../js/menu.js"></script>
+    </body>
+</html>

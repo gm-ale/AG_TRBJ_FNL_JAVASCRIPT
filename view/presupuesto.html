@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Locos_por_el_Mar</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet"  href="../css/estilos.css">
+    <link rel="stylesheet"  href="../css/presupuestos.css">
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <div class="nav_logo">
+        <h2 class="nav_title">Locos por el Mar</h2>
+      </div>
+
+      <button class="nav_close" aria-label="Cerrar menú">
+        <img src="../IMG/close.svg" alt="Cerrar navegación">
+      </button>
+
+      <ul class="nav_link nav_link--menu">
+        <li class="nav_items">
+          <a href="../index.html" class="nav_links">Inicio</a>
+        </li>
+        <li class="nav_items">
+          <a href="../view/galeria.html" class="nav_links">Galería</a>
+        </li>
+        <li class="nav_items">
+          <a href="../view/presupuesto.html" class="nav_links">Presupuesto</a>
+        </li>
+        <li class="nav_items">
+          <a href="../view/contacto.html" class="nav_links">Contacto</a>
+        </li>
+      </ul>
+
+      <div class="nav_menu">
+        <img src="../IMG/slider_inicio2.jpg" class="nav_img" alt="Imagen de inicio">
+      </div>
+    </nav>
+
+    <section class="hero_container container">
+      <h1 class="hero_title">Descubre como nunca antes el fondo marino.</h1>
+      <p class="hero_paragraph">
+        Elige y te enseñaremos a hacer Surf, Kayak, Submarinismo...
+      </p>
+      <a href="#" class="cta">Reserva Ahora</a>
+    </section>
+  </header>
+
+  <main>
+    <!--En este div definimos el formulario para solicitar presupuesto de nuestros servicios-->
+    <!-- Lo definimos por aparatados para que nos sea más facila a la hora de definir el js presypuesto-->
+    <div class="form-section">
+      <form id="budgetForm" novalidate>
+        <!-- DATOS DE CONTACTO -->
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" maxlength="15" required>
+          <small class="error" id="errorName"></small>
+          
+          <label for="surname">Apellidos:</label>
+          <input type="text" id="surname" name="surname" maxlength="40" required>
+          <small class="error" id="errorSurname"></small>
+          
+          <label for="phone">Teléfono de contacto:</label>
+          <input type="text" id="phone" name="phone" maxlength="9" required>
+          <small class="error" id="errorPhone"></small>
+          
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          <small class="error" id="errorEmail"></small>
+        </fieldset>
+        
+        <!-- PRESUPUESTO -->
+        <fieldset>
+          <legend>Presupuesto</legend>
+          
+          <p><strong>Producto:</strong></p>
+          <label><input type="radio" name="product" value="100" required> Producto A (€100)</label><br>
+          <label><input type="radio" name="product" value="150"> Producto B (€150)</label><br>
+          <label><input type="radio" name="product" value="200"> Producto C (€200)</label>
+          
+          <p><label for="term"><strong>Plazo (meses o días):</strong></label></p>
+          <input type="number" id="term" name="term" min="1" value="1" required>
+          <small class="info">Entre más corto el plazo, mayor el descuento (5% por cada mes menor a 6, mínimo 0%)</small>
+          
+          <p><strong>Extras:</strong></p>
+          <label><input type="checkbox" name="extras" value="20"> Extra 1 (€20)</label><br>
+          <label><input type="checkbox" name="extras" value="40"> Extra 2 (€40)</label><br>
+          <label><input type="checkbox" name="extras" value="60"> Extra 3 (€60)</label>
+          
+          <p><strong>Presupuesto final:</strong></p>
+          <output id="totalPrice">€0.00</output>
+        </fieldset>
+        
+        <!-- CONDICIONES Y BOTONES -->
+        <fieldset>
+          <label><input type="checkbox" id="terms" required> Acepto las condiciones de privacidad.</label>
+          <br><br>
+          <button type="submit">Enviar presupuesto</button>
+          <button type="reset">Resetear formulario</button>
+        </fieldset>
+      </form>
+    </div>
+      </main>
+
+  <footer class="footer">
+    <section class="footer_container container">
+        <nav class="nav nav--footer">
+            <h2 class="footer_title">Actividades y Excursiones</h2>
+
+            <ul class="nav_link nav_link--footer">
+                <li class="nav_items">
+                    <a href="#" class="nav_links"> Inicio</a>
+                </li>
+
+                <li class="nav_items">
+                    <a href="#" class="nav_links"> Galeria</a>
+                </li>
+
+                <li class="nav_items">
+                    <a href="#" class="nav_links"> Presupuesto</a>
+                </li>
+
+                <li class="nav_items">
+                    <a href="#" class="nav_links"> Contacto</a>
+                    <img src="../IMG/close.svg" class="nav_close" alt="icono de cierre del nav">
+                </li>
+
+            </ul>
+        </nav>
+
+        <form class="footer_form">
+            <h2 class="footer_newsletter">Suscibete a nuestra Newsletter</h2>
+            <div class="footer_inputs">
+                <input type="email" placeholder="Email:" class="footer_input">
+                <input type="submit" value="Registrate" class="footer_submit">
+            </div>
+        </form>
+    </section>
+
+    <section class="footer_copy container">
+        <div class="footer_social">
+            <a href="https://www.facebook.com/" class="footer_icons"><img src="../IMG/facebook.svg" class="footer_img" alt="logo facebook">  </a>
+            <a href="https://www.instagram.com/" class="footer_icons"><img src="../IMG/instagram.svg" class="footer_img" alt="logo instagram">  </a>
+            <a href="https://www.tiktok.com/" class="footer_icons"><img src="../IMG/tiktok.svg" class="footer_img" alt="logo tiktok">  </a>
+        </div>
+
+        <h3 class="footer_copyright">Derechos Reservados &copy; Alejandro García</h3>
+    </section>
+</footer>
+
+  <script src="../js/presupuesto.js"></script>
+</body>
+
+</html>

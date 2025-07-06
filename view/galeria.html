@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Locos_por_el_Mar</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet"  href="../css/estilos.css">
+        <link rel="stylesheet"  href="../css/galeria.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header class="hero">
+            <nav class="nav container">
+                <div class="nav_logo">
+                    <h2 class="nav_title">Locos por el Mar</h2>
+                </div>
+
+                <ul class="nav_link nav_link--menu">
+                    <li class="nav_items">
+                        <a href="../index.html" class="nav_links"> Inicio</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="../view/galeria.html" class="nav_links"> Galeria</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="../view/presupuesto.html" class="nav_links"> Presupuesto</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="../view/contacto.html" class="nav_links"> Contacto</a>
+                        <img src="../IMG/close.svg" class="nav_close" alt="icono de cierre del nav">
+
+                    </li>
+                </ul>
+
+                <div class="nav_menu">
+                    <img src="../IMG/slider_inicio2.jpg" class="nav_img" alt="imagen de inicio">
+                </div>
+            </nav>
+
+            <section class="hero_container container">
+                    <h1 class="hero_title"> Descubre como nunca antes el fondo marino.</h1>
+                    <p class="hero_paragraph"> Elige y te enseñaremos hacer desde Surf, Kayak, Submarinimos...</p>
+                    <a href="#" class="cta">Reserva Ahora</a>
+            </section>
+        </header>
+
+        <!--De la landing Gallery lo que destacamos es el siguiente Section-->
+        <!--Este section comienza por un h2 para indicarle al usurio que va encontrar al hacer scroll-->
+
+        <section class="container gallery">
+            <h2 class="subtitle">Conoce todas las expericias y aventuras que ofrecemos</h2>
+        </section>
+
+        <!--Después tenemos este div dónde enlazamos todas la imagenes que vamos a mostrar relacionadas con nuestros servicios-->
+        <!--Este DIV se divide en dos partes la primera dónde definimos la images y la segunda dónde creamos el container_img-->
+        <div class="container_grid">
+            <img src="../IMG/sport1.jpg" alt="imagen_servicio1" class="img img_1">
+            <img src="../IMG/sport2.jpg" alt="imagen_servicio2" class="img img_2">
+            <img src="../IMG/sport3.jpg" alt="imagen_servicio3" class="img img_3">
+            <img src="../IMG/sport4.jpg" alt="imagen_servicio4" class="img img_4">
+            <img src="../IMG/sport5.jpg" alt="imagen_servicio5" class="img img_5">
+            <img src="../IMG/sport6.jpg" alt="imagen_servicio6" class="img img_6">
+            <img src="../IMG/sport7.jpg" alt="imagen_servicio7" class="img img_7">
+            <img src="../IMG/sport8.jpg" alt="imagen_servicio8" class="img img_8">
+            <img src="../IMG/sport9.jpg" alt="imagen_servicio9" class="img img_9">
+            <img src="../IMG/sport10.jpg" alt="imagen_servicio10" class="img img_10">
+        
+            <!--eL CONTAINER_IMG lo creamos con el objetivo de que premitir al usuario que cuando pulse en la img esta se amplie para ver la mejor-->
+            <!-- Junto a este div definimos un <i> para crear un button que permita cerrar la imagen y un copy para intoducir info sobre la img -->
+            <div class="container_img">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" class="img_show" alt="imagenes_de_servicios">
+                <i class="bx bx-x" role="button" aria-label="Cerrar imagen ampliada"></i>
+                <p class="copy"></p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <section class="footer_container container">
+                <nav class="nav nav--footer">
+                    <h2 class="footer_title">Actividades y Excursiones</h2>
+
+                    <ul class="nav_link nav_link--footer">
+                        <li class="nav_items">
+                            <a href="../index.html" class="nav_links"> Inicio</a>
+                        </li>
+    
+                        <li class="nav_items">
+                            <a href="./galeria.html" class="nav_links"> Galeria</a>
+                        </li>
+    
+                        <li class="nav_items">
+                            <a href="./presupuesto.html" class="nav_links"> Presupuesto</a>
+                        </li>
+    
+                        <li class="nav_items">
+                            <a href="../view/contacto.html" class="nav_links"> Contacto</a>
+                            <img src="../IMG/close.svg" class="nav_close" alt="icono de cierre del nav">
+                        </li>
+     
+                    </ul>
+                </nav>
+
+                <form class="footer_form">
+                    <h2 class="footer_newsletter">Suscibete a nuestra Newsletter</h2>
+                    <div class="footer_inputs">
+                        <input type="email" placeholder="Email:" class="footer_input">
+                        <input type="submit" value="Registrate" class="footer_submit">
+                    </div>
+                </form>
+            </section>
+
+            <section class="footer_copy container">
+                <div class="footer_social">
+                    <a href="https://www.facebook.com/" class="footer_icons"><img src="../IMG/facebook.svg" class="footer_img" alt="logo facebook">  </a>
+                    <a href="https://www.instagram.com/" class="footer_icons"><img src="../IMG/instagram.svg" class="footer_img" alt="logo instagram">  </a>
+                    <a href="https://www.tiktok.com/" class="footer_icons"><img src="../IMG/tiktok.svg" class="footer_img" alt="logo tiktok">  </a>
+                </div>
+
+                <h3 class="footer_copyright">Derechos Reservados &copy; Alejandro García</h3>
+            </section>
+        </footer>
+
+    <script src="../js/galeria.js"></script>
+    </body>
+</html>
